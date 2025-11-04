@@ -11,7 +11,7 @@ export default function QRCodeGenerator() {
     const image = canvas.toDataURL("image/png"); // convert it to image data
     const link = document.createElement("a"); // create an invisible download link
     link.href = image;
-    link.download = `qr-code-${Date.now()}.png`; // file name
+    link.download = `qr-${Date.now()}.png`; // file name
     link.click(); // trigger download
   };
 
